@@ -1,0 +1,20 @@
+{% extends 'meseros/base_generic.html' %}
+{% block content %}
+<h4>Listado de Meseros</h4>
+        <table class="table table-bordered">
+            <thead class="bg-primary">
+                <tr>
+                    <td>Pais</td>
+                    <td>Edad</td>
+                </tr>
+            </thead>
+            <tbody>
+                {% for meseros in data reversed %}
+                <tr>
+                    <td>{{meseros.pais}}</td>
+                    <td>{{meseros.edad}}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+{% endblock %}

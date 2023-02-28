@@ -38,7 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'platos.apps.PlatosConfig',
-    'clientes.apps.ClientesConfig'
+    'clientes.apps.ClientesConfig',
+    'meseros.apps.MeserosConfig'
 ]
 
 MIDDLEWARE = [
@@ -78,7 +79,7 @@ WSGI_APPLICATION = 'app_restaurant.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'db_restaurant',
+        'NAME': 'db_restaurant_respaldo',
         'USER': 'postgres',
         'PASSWORD': 'peru',
         'HOST': 'localhost',
