@@ -9,6 +9,6 @@ def platillos_list(request):
     # p = Platos(nombre='Cau cau',precio=50,procedencia='Perú')
     # p.save()
 
-    #platillos = Platos.objects.all()
-    platillos = Platos.objects.filter(procedencia='Perú',precio__gte=40)
+    platillos = Platos.objects.all()
+    #platillos = Platos.objects.filter(procedencia='Perú',precio__gte=40)
     return render(request, 'platos/platos_list.html', context={'data': platillos})

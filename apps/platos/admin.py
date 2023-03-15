@@ -5,4 +5,4 @@ from .models import Platos
 #admin.site.register(Platos)
 class PlatosAdmin(admin.ModelAdmin):
     list_display = ("nombre","precio")
-    list_filter = ("nombre",)
+    list_filter = ("precio","nombre",)

@@ -7,4 +7,4 @@ class Platos(models.Model):
     procedencia = models.CharField(max_length=50,default='Perú')
 
     def __str__(self):
-        return "{}, {}".format(self.nombre,self.precio)
+        return f"{self.nombre}, {self.precio}"
